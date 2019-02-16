@@ -40,7 +40,9 @@ ul {
 }
 
 .status {
-    margin-bottom: 10px;
+    margin-bottom: 15%;
+    font-size: 24px;
+    text-shadow: 2px 0px #ff9900;
 }
 
 .game-board{
@@ -48,9 +50,9 @@ ul {
 }
 
 .square {
-    background-color: #C70039;
-    border: 6px solid #900C3F;
-    color: white;
+    background-color: #D4AC0D;
+    border: 6px solid #F7DC6F;
+    color: #641E16;
     padding: 20px;
     font-size: 30px;
     text-align: center;
