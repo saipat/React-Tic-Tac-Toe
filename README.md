@@ -1,6 +1,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ![Imgur](https://i.imgur.com/Kqehpor.png)
+![Imgur](https://i.imgur.com/M5f2AMl.png)
 
 ## Available Scripts
 
