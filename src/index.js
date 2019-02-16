@@ -34,6 +34,11 @@ class Board extends React.Component {
 
     handleClick(i){
         const squares = this.state.squares.slice();
+
+        if(calculateWinner(squares) || squares[i]){
+            return;
+        }
+
         squares[i] = this.state.xIsNext ? 'X' : 'O';
         this.setState((prevState) => ({
             squares: squares,
@@ -104,7 +109,7 @@ function calculateWinner(squares){
 
     for(let i=0; i < lines.length; i++){
         const [a,b,c] = lines[i];
-        if(squares(a) && squares(a) === squares(b) && squares(a) === squares(c)){
+        if(squares[a] && squares[a] === squares[b] && squares[a] === squares[c]) {
             return squares[a];
         }
     }
