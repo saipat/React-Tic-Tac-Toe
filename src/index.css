@@ -1,6 +1,31 @@
 body {
-    font: 14px "Century Gothic", Futura, sans-serif;
-    margin: 20px;
+    /* background: linear-gradient(45deg, red, blue); */
+    width: 100vw;
+    height: 90vh;
+    color: #fff;
+    background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+    background-size: 400% 400%;
+    -webkit-animation: ChangingColorsChangingColorsChangingColors 15s ease infinite;
+    -moz-animation: ChangingColorsChangingColors 15s ease infinite;
+    animation: ChangingColors 15s ease infinite;
+    font-size: 20px;
+    text-align: center;
+    font-family: monaco;
+    position: relative;
+}
+
+@keyframes ChangingColors {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
 }
 
 ol,
@@ -18,19 +43,26 @@ ul {
     margin-bottom: 10px;
 }
 
+.game-board{
+    margin: 10% auto;
+}
+
 .square {
-    background: #fff;
-    border: 1px solid #999;
-    float: left;
-    font-size: 24px;
-    font-weight: bold;
-    line-height: 34px;
-    height: 34px;
-    margin-right: -1px;
-    margin-top: -1px;
-    padding: 0;
+    background-color: #C70039;
+    border: 6px solid #900C3F;
+    color: white;
+    padding: 20px;
+    font-size: 30px;
     text-align: center;
-    width: 34px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    width: 111px;
+    height: 107px;
+    font-size: 22px;
+    float: left;
 }
 
 .square:focus {
@@ -38,7 +70,7 @@ ul {
 }
 
 .kbd-navigation .square:focus {
-    background: #ddd;
+    background: #DAF7A6
 }
 
 .game {
@@ -47,5 +79,5 @@ ul {
 }
 
 .game-info {
-    margin-left: 20px;
+    /* margin-left: 20px; */
 }
